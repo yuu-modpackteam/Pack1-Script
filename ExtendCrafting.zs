@@ -14,7 +14,7 @@ mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_chestplate>);
 mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_pants>);
 mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_boots>);
 
-mods.avaritia.Compressor.remove(<avaritia:singularity:*>)
+mods.avaritia.Compressor.remove(<avaritia:singularity:*>);
 
 #JEI remove
 mods.jei.JEI.removeAndHide(<avaritia:singularity:*>);
