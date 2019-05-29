@@ -1,46 +1,214 @@
-//TheEnder,StellarTools
-val TheEMk1=<enderio:item_dark_steel_sword>.withTag({"enderio.darksteel.upgrade.travel": {level: 0}, "enderio.darksteel.upgrade.direct": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 1000000}});
-val TheEMk2=<enderio:item_end_steel_sword>.withTag({"enderio.darksteel.upgrade.travel": {level: 0}, "enderio.darksteel.upgrade.direct": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}});
-val TheEMk4=<enderio:item_stellar_alloy_sword>.withTag({"enderio.darksteel.upgrade.travel": {level: 0}, "enderio.darksteel.upgrade.direct": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}});
-val TravelW=<enderio:item_travel_staff>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 1000000}});
-val DarkSteB=<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "dark_steel", Amount: 1000}});
-val EndSteB=<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "end_steel", Amount: 1000}});
-val StarSteB=<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "stellar_alloy", Amount: 1000}});
-recipes.addShaped(TheEMk1, [[null, null, DarkSteB], [<enderio:item_alloy_nugget:6>, <extrabotany:shadowkatana>, null], [TravelW, <enderio:item_alloy_nugget:6>, null]]);
-recipes.addShaped(TheEMk2, [[<integrateddynamics:crystalized_chorus_chunk>, null, EndSteB], [<enderio:item_alloy_nugget:6>, TheEMk1, null], [<ore:itemInfinityRod>, <ore:nuggetDarkSteel>, <integrateddynamics:crystalized_chorus_chunk>]]);
-recipes.addShaped(<enderio:item_end_steel_helmet>, [[<ore:ingotEndSteel>, <enderio:item_dark_steel_helmet>, <ore:ingotEndSteel>], [<enderio:item_alloy_ingot:8>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>]]);
-recipes.addShaped(<enderio:item_end_steel_chestplate>, [[<ore:ingotEndSteel>, null, <ore:ingotEndSteel>], [<ore:ingotEndSteel>, <enderio:item_dark_steel_chestplate>, <ore:ingotEndSteel>], [<enderio:item_alloy_ingot:8>, <enderio:item_material:56>, <ore:ingotEndSteel>]]);
-recipes.addShaped(<enderio:item_end_steel_leggings>, [[<ore:ingotEndSteel>, <enderio:item_dark_steel_leggings>, <ore:ingotEndSteel>], [<ore:ingotEndSteel>, <enderio:item_material:56>, <ore:ingotEndSteel>], [<enderio:item_alloy_ingot:8>, null, <ore:ingotEndSteel>]]);
-recipes.addShaped(<enderio:item_end_steel_boots>, [[<ore:ingotEndSteel>, <enderio:item_dark_steel_boots>, <ore:ingotEndSteel>], [<enderio:item_alloy_ingot:8>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>]]);
-recipes.addShaped(TheEMk4, [[<actuallyadditions:item_crystal_empowered:5>, <ore:ingotStellarAlloy>, <extendedcrafting:material:40>], [<botanicadds:gaia_shard>, TheEMk2, <ore:ingotStellarAlloy>], [<mekanism:polyethene:3>, <ore:skullSentientEnder>, <botanicadds:gaia_shard>]]);
-recipes.addShaped(<enderio:item_stellar_alloy_pickaxe>,[[<botanicadds:gaia_shard>, <ore:ingotStellarAlloy>, <extendedcrafting:material:40>], [<actuallyadditions:item_crystal_empowered:5>, <astralsorcery:itemchargedcrystalpickaxe>, <ore:ingotStellarAlloy>], [<mekanism:polyethene:3>, <ore:skullSentientEnder>, <botanicadds:gaia_shard>]]);
-recipes.addShaped(<enderio:item_stellar_alloy_axe>, [[<extendedcrafting:material:40>, <ore:ingotStellarAlloy>, <botanicadds:gaia_shard>], [<ore:ingotStellarAlloy>, <astralsorcery:itemchargedcrystalaxe>, <actuallyadditions:item_crystal_empowered:5>], [<mekanism:polyethene:3>, <ore:skullSentientEnder>, <botanicadds:gaia_shard>]]);
+#工業系戦闘アイテム
+#val = ;
+#recipes.addShaped(, [
+#	[, , ],
+#	[, , ], 
+#	[, , ]]);
 
-//Redstone Arsenal/Repository
-val EFHe=<redstonerepository:armor.helmet_gelid>;
-val EFCh=<redstonerepository:armor.plate_gelid>;
-val EFLe=<redstonerepository:armor.legs_gelid>;
-val EFBo=<redstonerepository:armor.boots_gelid>;
-recipes.addShaped(EFHe, [[<redstonerepository:material:7>, <techreborn:energycrystal>, <redstonerepository:material:7>], [<redstonerepository:material:7>, <redstonearsenal:armor.helmet_flux>, <redstonerepository:material:7>]]);
-recipes.addShaped(EFCh, [[<redstonerepository:material:7>, <redstonearsenal:armor.plate_flux>, <redstonerepository:material:7>], [<redstonerepository:material:7>, <techreborn:energycrystal>, <redstonerepository:material:7>], [<redstonerepository:material:7>, <redstonerepository:material:7>, <redstonerepository:material:7>]]);
-recipes.addShaped(EFLe, [[<redstonerepository:material:7>, <techreborn:energycrystal>, <redstonerepository:material:7>], [<redstonerepository:material:7>, <redstonearsenal:armor.legs_flux>, <redstonerepository:material:7>], [<redstonerepository:material:7>, null, <redstonerepository:material:7>]]);
-recipes.addShaped(EFBo, [[<redstonerepository:material:7>, <techreborn:energycrystal>, <redstonerepository:material:7>], [<redstonerepository:material:7>, <redstonearsenal:armor.boots_flux>, <redstonerepository:material:7>]]);
-recipes.addShaped(<redstonearsenal:armor.helmet_flux>, [[<redstonearsenal:material:224>, <thermalexpansion:frame:146>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <conarm:helmet_core>.withTag({Material: "electrum"}), <redstonearsenal:material:224>]]);
-recipes.addShaped(<redstonearsenal:armor.plate_flux>, [[<redstonearsenal:material:224>, <conarm:chest_core>.withTag({Material: "electrum"}), <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <thermalexpansion:frame:146>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>]]);
-recipes.addShaped(<redstonearsenal:armor.legs_flux>, [[<redstonearsenal:material:224>, <thermalexpansion:frame:146>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <conarm:leggings_core>.withTag({Material: "electrum"}), <redstonearsenal:material:224>], [<redstonearsenal:material:224>, null, <redstonearsenal:material:224>]]);
-recipes.addShaped(<redstonearsenal:armor.boots_flux>, [[<redstonearsenal:material:224>, <thermalexpansion:frame:146>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <conarm:boots_core>.withTag({Material: "electrum"}), <redstonearsenal:material:224>]]);
+#EnderIOMaterials
 
-//Nano
-val NaHe=<ic2:nano_helmet>;
-val NaCh=<ic2:nano_chestplate>;
-val NaLe=<ic2:nano_leggings>;
-val NaBo=<ic2:nano_boots>;
-recipes.addShaped(NaBo, [[<ic2:crafting:15>, <mekanism:energycube>, <ore:plateCarbon>], [<ore:plateCarbon>, <enderio:item_end_steel_boots>, <ore:plateCarbon>]]);
-recipes.addShaped(NaLe, [[<ore:plateCarbon>, <enderio:item_end_steel_leggings>, <ore:plateCarbon>], [<ic2:crafting:15>, <mekanism:energycube>, <ore:plateCarbon>], [<ore:plateCarbon>, null, <ore:plateCarbon>]]);
-recipes.addShaped(NaCh, [[<ore:plateCarbon>, <enderio:item_end_steel_chestplate>, <ore:plateCarbon>], [<ic2:crafting:15>, <mekanism:energycube>, <ore:plateCarbon>], [<ore:plateCarbon>, <ic2:crafting:15>, <ore:plateCarbon>]]);
-recipes.addShaped(NaHe, [[<ore:plateCarbon>, <enderio:item_end_steel_helmet>, <ore:plateCarbon>], [<ic2:crafting:15>, <mekanism:energycube>, <ore:plateCarbon>], [<ore:plateCarbon>, <ic2:nightvision_goggles:26>, <ore:plateCarbon>]]);
+	//Variables
+	
+		val Dark_Steel_Ingot = <enderio:item_alloy_ingot:6>;
+		val Dark_Steel_Cell = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "dark_steel", Amount: 1000}});
+		val Dark_Steel_Nugget = <enderio:item_alloy_nugget:6>;
+		val End_Steel_Ingot = <enderio:item_alloy_ingot:8>;
+		val Emd_Steel_Cell = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "end_steel", Amount: 1000}});
+		val End_Steel_Nugget = <enderio:item_alloy_nugget:8>;
+		val Stellar_Steel_Ingot = <enderio:item_alloy_endergy_ingot:3>;
+		val Stellar_Alloy_Cell = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "stellar_alloy", Amount: 1000}});
+		val Stellar_Alloy_Nugget = <enderio:item_alloy_endergy_nugget:3>;
+	
+		
+#TheEnder StellarTools
 
-//Quantum
+	//Variables
+	
+		val The_Ender_MK1 = <enderio:item_dark_steel_sword>.withTag({"enderio.darksteel.upgrade.travel": {level: 0}, "enderio.darksteel.upgrade.direct": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 1000000}});
+		val The_Ender_MK2 = <enderio:item_end_steel_sword>.withTag({"enderio.darksteel.upgrade.travel": {level: 0}, "enderio.darksteel.upgrade.direct": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}});
+		val The_Ender_MK4 = <enderio:item_stellar_alloy_sword>.withTag({"enderio.darksteel.upgrade.travel": {level: 0}, "enderio.darksteel.upgrade.direct": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}});
+		val Stellar_Picaxe = <enderio:item_stellar_alloy_pickaxe>;
+		val Stellar_Axe = <enderio:item_stellar_alloy_axe>;
+		val Staff_of_Traveling = <enderio:item_travel_staff>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 1000000}});
+		val Shadow_Katana = <extrabotany:shadowkatana>;
+		val Chorus_Chunk = <integrateddynamics:crystalized_chorus_chunk>;
+		val Infinity_Rod = <ore:itemInfinityRod>;
+		val Empowered_Enori_Crystal = <actuallyadditions:item_crystal_empowered:5>;
+		val Ender_Star = <extendedcrafting:material:40>;
+		val Gaia_Shard = <botanicadds:gaia_shard>;
+		val Sentient_Ender = <ore:skullSentientEnder>; 
+		val Pla_Stick = <mekanism:polyethene:3>; 
+		val Infused_Crystal_Pickaxe = <astralsorcery:itemchargedcrystalpickaxe>;
+		val Infused_Crystal_Axe = <astralsorcery:itemchargedcrystalaxe>;
+	
+	
+	//Recipes
+
+		recipes.addShaped(The_Ender_MK1, [
+			[ null , null, Dark_Steel_Cell],
+			[Dark_Steel_Nugget, Shadow_Katana, null], 
+			[Staff_of_Traveling, Dark_Steel_Nugget, null]]);
+		recipes.addShaped(The_Ender_MK2, [
+			[Chorus_Chunk, null, Emd_Steel_Cell],
+			[End_Steel_Nugget, The_Ender_MK1, null], 
+			[Infinity_Rod, End_Steel_Nugget, Chorus_Chunk]]);
+		recipes.addShaped(The_Ender_MK4, [
+			[Empowered_Enori_Crystal, Stellar_Alloy_Cell, Ender_Star], 
+			[Gaia_Shard, The_Ender_MK2, Stellar_Alloy_Nugget], 
+			[Pla_Stick, Sentient_Ender, Gaia_Shard]]);
+		recipes.addShaped(Stellar_Picaxe, [
+			[Gaia_Shard, Stellar_Alloy_Cell, Ender_Star],
+			[Empowered_Enori_Crystal, Infused_Crystal_Pickaxe, Stellar_Alloy_Nugget], 
+			[Pla_Stick, Sentient_Ender, Gaia_Shard]]);
+		recipes.addShaped(Stellar_Axe, [
+			[Ender_Star, Stellar_Alloy_Cell, Gaia_Shard],
+			[Stellar_Alloy_Nugget, Infused_Crystal_Axe, Empowered_Enori_Crystal], 
+			[Pla_Stick, Sentient_Ender, Gaia_Shard]]);
+	
+	
+#EnderIO Armors
+
+	//Variables
+
+		val Dark_Helmet = <enderio:item_dark_steel_helmet>;
+		val Dark_Chestplate = <enderio:item_dark_steel_chestplate>;
+		val Dark_Leggings = <enderio:item_dark_steel_leggings>;
+		val Dark_Boots = <enderio:item_dark_steel_boots>;
+		val End_Helmet = <enderio:item_end_steel_helmet>;
+		val End_Chestplate = <enderio:item_end_steel_chestplate>;
+		val End_Leggings = <enderio:item_end_steel_leggings>;
+		val End_Boots = <enderio:item_end_steel_boots>;
+		val Shadow_Helmet = <extrabotany:shadowwarriorhelm>;
+		val Shadow_Chestplate = <extrabotany:shadowwarriorchest>;
+		val Shadow_Leggings = <extrabotany:shadowwarriorlegs>;
+		val Shadow_Boots = <extrabotany:shadowwarriorboots>;
+		val Skeletal_Contractor = <enderio:item_material:45>;
+		val Guardian_Diode = <ore:skullGuardianDiode>;
+	
+	
+	//Recipes
+	
+		recipes.addShaped(Dark_Helmet, [
+			[Dark_Steel_Ingot, Skeletal_Contractor, Dark_Steel_Ingot], 
+			[Dark_Steel_Ingot, Shadow_Helmet, Dark_Steel_Ingot]]);
+		recipes.addShaped(Dark_Chestplate, [
+			[Dark_Steel_Ingot, null, Dark_Steel_Ingot],
+			[Dark_Steel_Ingot, Shadow_Chestplate, Dark_Steel_Ingot], 
+			[Dark_Steel_Ingot, Skeletal_Contractor, Dark_Steel_Ingot]]);
+		recipes.addShaped(Dark_Leggings, [
+			[Dark_Steel_Ingot, Skeletal_Contractor, Dark_Steel_Ingot],
+			[Dark_Steel_Ingot, Shadow_Leggings, Dark_Steel_Ingot], 
+			[Dark_Steel_Ingot, null, Dark_Steel_Ingot]]);
+		recipes.addShaped(Dark_Boots, [
+			[Dark_Steel_Ingot, Skeletal_Contractor, Dark_Steel_Ingot], 
+			[Dark_Steel_Ingot, Shadow_Boots, Dark_Steel_Ingot]]);
+	
+		recipes.addShaped(End_Helmet, [
+			[End_Steel_Ingot, Guardian_Diode, End_Steel_Ingot], 
+			[End_Steel_Ingot, Dark_Helmet, End_Steel_Ingot]]);
+		recipes.addShaped(End_Chestplate, [
+			[End_Steel_Ingot, null, End_Steel_Ingot],
+			[End_Steel_Ingot, Dark_Chestplate, End_Steel_Ingot], 
+			[End_Steel_Ingot, Guardian_Diode, End_Steel_Ingot]]);
+		recipes.addShaped(End_Leggings, [
+			[End_Steel_Ingot, Guardian_Diode, End_Steel_Ingot],
+			[End_Steel_Ingot, Dark_Leggings, End_Steel_Ingot], 
+			[End_Steel_Ingot, null, End_Steel_Ingot]]);
+		recipes.addShaped(End_Boots, [
+			[End_Steel_Ingot, Guardian_Diode, End_Steel_Ingot], 
+			[End_Steel_Ingot, Dark_Boots, End_Steel_Ingot]]);
+		
+		
+#Redstone Arsenal Repository
+
+	//Variables
+
+		val Flux_Infused_Helmet = <redstonearsenal:armor.helmet_flux>;
+		val Flux_Infused_Chestplate = <redstonearsenal:armor.plate_flux>;
+		val Flux_Infused_Leggings = <redstonearsenal:armor.legs_flux>;
+		val Flux_Infused_Boots = <redstonearsenal:armor.boots_flux>;
+		val Electrum_Helmet = <conarm:helmet_core>.withTag({Material: "electrum"});
+		val Electrum_Chestplate = <conarm:chest_core>.withTag({Material: "electrum"});
+		val Electrum_Leggings = <conarm:leggings_core>.withTag({Material: "electrum"});
+		val Electrum_Boots = <conarm:boots_core>.withTag({Material: "electrum"});
+		val Fluxed_Armor_Plating = <redstonearsenal:material:224>;
+		val Reinforced_Cell_Frame = <thermalexpansion:frame:146>;
+	
+		val Enderium_Flux_Helmet = <redstonerepository:armor.helmet_gelid>;
+		val Enderium_Flux_Chestplate = <redstonerepository:armor.plate_gelid>;
+		val Enderium_Flux_Leggings = <redstonerepository:armor.legs_gelid>;
+		val Enderium_Flux_Boots = <redstonerepository:armor.boots_gelid>;
+		val Gelid_Enderium_Armor_Plating = <redstonerepository:material:7>;
+		val Energy_Crystal = <techreborn:energycrystal>;
+		
+	
+	//Recipes
+	
+		recipes.addShaped(Flux_Infused_Helmet, [
+			[Fluxed_Armor_Plating, Reinforced_Cell_Frame, Fluxed_Armor_Plating], 
+			[Fluxed_Armor_Plating, Electrum_Helmet, Fluxed_Armor_Plating]]);
+		recipes.addShaped(Flux_Infused_Chestplate, [
+			[Fluxed_Armor_Plating, Electrum_Chestplate, Fluxed_Armor_Plating],
+			[Fluxed_Armor_Plating, Reinforced_Cell_Frame, Fluxed_Armor_Plating], 
+			[Fluxed_Armor_Plating, Fluxed_Armor_Plating, Fluxed_Armor_Plating]]);
+		recipes.addShaped(Flux_Infused_Leggings, [
+			[Fluxed_Armor_Plating, Reinforced_Cell_Frame, Fluxed_Armor_Plating],
+			[Fluxed_Armor_Plating, Electrum_Leggings, Fluxed_Armor_Plating], 
+			[Fluxed_Armor_Plating, null, Fluxed_Armor_Plating]]);
+		recipes.addShaped(Flux_Infused_Boots, [
+			[Fluxed_Armor_Plating, Reinforced_Cell_Frame, Fluxed_Armor_Plating], 
+			[Fluxed_Armor_Plating, Electrum_Boots, Fluxed_Armor_Plating]]);
+	
+		recipes.addShaped(Enderium_Flux_Helmet, [
+			[Gelid_Enderium_Armor_Plating, Energy_Crystal, Gelid_Enderium_Armor_Plating], 
+			[Gelid_Enderium_Armor_Plating, Electrum_Helmet, Gelid_Enderium_Armor_Plating]]);
+		recipes.addShaped(Enderium_Flux_Chestplate, [
+			[Gelid_Enderium_Armor_Plating, Electrum_Chestplate, Gelid_Enderium_Armor_Plating],
+			[Gelid_Enderium_Armor_Plating, Energy_Crystal, Gelid_Enderium_Armor_Plating], 
+			[Gelid_Enderium_Armor_Plating, Gelid_Enderium_Armor_Plating, Gelid_Enderium_Armor_Plating]]);
+		recipes.addShaped(Enderium_Flux_Leggings, [
+			[Gelid_Enderium_Armor_Plating, Energy_Crystal, Gelid_Enderium_Armor_Plating],
+			[Gelid_Enderium_Armor_Plating, Electrum_Leggings, Gelid_Enderium_Armor_Plating], 
+			[Gelid_Enderium_Armor_Plating, null, Gelid_Enderium_Armor_Plating]]);
+		recipes.addShaped(Enderium_Flux_Boots, [
+			[Gelid_Enderium_Armor_Plating, Energy_Crystal, Gelid_Enderium_Armor_Plating], 
+			[Gelid_Enderium_Armor_Plating, Electrum_Boots, Gelid_Enderium_Armor_Plating]]);
+	
+	
+#Nano Suit
+
+	//Variables
+
+		val Nano_Helmet = <ic2:nano_helmet>;
+		val Nano_Chestplate = <ic2:nano_chestplate>;
+		val Nano_Leggings = <ic2:nano_leggings>;
+		val Nano_Booots = <ic2:nano_boots>;
+		val Carbon_Plate = <ore:plateCarbon>;
+		val Nightvision_Goggles = <ic2:nightvision_goggles:26>
+		val Energy_Cube_T1 = <mekanism:energycube>.withTag({tier: 0});
+	
+	
+	//Recipes
+
+		recipes.addShaped(Nano_Helmet, [
+			[Carbon_Plate, End_Helmet, Carbon_Plate], 
+			[Carbon_Plate, Energy_Cube_T1, Carbon_Plate], 
+			[Carbon_Plate, Nightvision_Goggles, Carbon_Plate]]);
+		recipes.addShaped(Nano_Chestplate, [
+			[Carbon_Plate, End_Chestplate, Carbon_Plate], 
+			[Carbon_Plate, Energy_Cube_T1, Carbon_Plate],
+			[Carbon_Plate, Carbon_Plate, Carbon_Plate]]);
+		recipes.addShaped(Nano_Leggings, [
+			[Carbon_Plate, End_Leggings, Carbon_Plate],
+			[Carbon_Plate, Energy_Cube_T1, Carbon_Plate], 
+			[Carbon_Plate, null, Carbon_Plate]]);
+		recipes.addShaped(Nano_Booots, [
+			[Carbon_Plate, Energy_Cube_T1, Carbon_Plate],
+			[Carbon_Plate, End_Boots, Carbon_Plate]]);	
+		
+	
+#Quantum
+
 val IrAP=<techreborn:plates:37>;
 val IrRP=<advanced_solar_panels:crafting:9>;
 val T3Ci=<techreborn:part:1>;
@@ -52,10 +220,10 @@ val WiRo=<xreliquary:witherless_rose>;
 val Ovcl=<ic2:upgrade>;
 val MeAJ=<mekanism:armoredjetpack>;
 val MeFR=<mekanism:freerunners>;
-val QuHe=<ic2:quantum_helmet:27>;
-val QuCh=<ic2:quantum_chestplate:27>;
-val QuLe=<ic2:quantum_leggings:27>;
-val QuBo=<ic2:quantum_boots:27>;
+val QuHe=<ic2:quantum_helmet:26>;
+val QuCh=<ic2:quantum_chestplate:26>;
+val QuLe=<ic2:quantum_leggings:26>;
+val QuBo=<ic2:quantum_boots:26>;
 mods.extendedcrafting.TableCrafting.addShaped(3, QuHe, [
 [null, null, null, null, null, null, null], 
 [null, IrAP, IrAP, IrAP, IrAP, IrAP, null], 
@@ -89,11 +257,11 @@ mods.extendedcrafting.TableCrafting.addShaped(3, QuHe, [
 [IrRP, IrAP, IrAP, IrRP, IrAP, IrAP, IrRP],
 [null, null, null, null, null, null, null]]);  
 
-//Stellar
-val SteHe=<enderio:item_stellar_alloy_helmet>.withTag({ "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}, "enderio.darksteel.upgrade.inv": {level: 2}, "enderio.darksteel.upgrade.nightVision": {level: 0}, "enderio.darksteel.upgrade.solar": {level: 3}, "enderio.darksteel.upgrade.gogglesOfRevealing": {level: 0}});
-val SteCh=<enderio:item_stellar_alloy_chestplate>.withTag({"enderio.darksteel.upgrade.thaumaturge_robes_chest": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}, "enderio.darksteel.upgrade.inv": {level: 2}, "enderio.darksteel.upgrade.elytra": {level: 0}});
-val SteLe=<enderio:item_stellar_alloy_leggings>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}, "enderio.darksteel.upgrade.inv": {level: 2}, "enderio.darksteel.upgrade.thaumaturge_robes_legs": {level: 0}, "enderio.darksteel.upgrade.speedBoost": {level: 3}});
-val SteBo=<enderio:item_stellar_alloy_boots>.withTag({"enderio.darksteel.upgrade.jumpBoost": {level: 3}, "enderio.darksteel.upgrade.swim": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}, "enderio.darksteel.upgrade.inv": {level: 2}, "enderio.darksteel.upgrade.thaumaturge_robes_feet": {level: 0}});
+#Stellar Armor
+	val Stellar_Helmet = <enderio:item_stellar_alloy_helmet>.withTag({ "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}, "enderio.darksteel.upgrade.inv": {level: 2}, "enderio.darksteel.upgrade.nightVision": {level: 0}, "enderio.darksteel.upgrade.solar": {level: 3}, "enderio.darksteel.upgrade.gogglesOfRevealing": {level: 0}});
+	val Stellar_Chestplate = <enderio:item_stellar_alloy_chestplate>.withTag({"enderio.darksteel.upgrade.thaumaturge_robes_chest": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}, "enderio.darksteel.upgrade.inv": {level: 2}, "enderio.darksteel.upgrade.elytra": {level: 0}});
+	val Stellar_Leggings = <enderio:item_stellar_alloy_leggings>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}, "enderio.darksteel.upgrade.inv": {level: 2}, "enderio.darksteel.upgrade.thaumaturge_robes_legs": {level: 0}, "enderio.darksteel.upgrade.speedBoost": {level: 3}});
+	val Stellar_Boots = <enderio:item_stellar_alloy_boots>.withTag({"enderio.darksteel.upgrade.jumpBoost": {level: 3}, "enderio.darksteel.upgrade.swim": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 4, energy: 2500000}, "enderio.darksteel.upgrade.inv": {level: 2}, "enderio.darksteel.upgrade.thaumaturge_robes_feet": {level: 0}});
 mods.extendedcrafting.TableCrafting.addShaped(4, SteHe, [
 	[null, null, null, <ore:ingotStellarAlloy>, <astralsorcery:itemshiftingstar>, <ore:ingotStellarAlloy>, null, null, null], 
 	[null, null, <ore:ingotStellarAlloy>, <ore:plateMithrillium>, <extrautils2:opinium:8>, <ore:plateMithrillium>, <ore:ingotStellarAlloy>, null, null], 
@@ -141,6 +309,6 @@ mods.extendedcrafting.TableCrafting.addShaped(4, SteBo, [
 
 //DE
 
-//Others
-recipes.addShaped(<industrialforegoing:infinity_drill>, [[null, <techreborn:advanceddrill>, <ore:craftingTungstenGrinder>], [<ore:plateTungstensteel>, <industrialforegoing:laser_drill>, <thermalinnovation:drill:4>], [<ore:plateTungstensteel>, <ore:ingotCrystallinePinkSlime>, null]]);
+#Others
+	recipes.addShaped(<industrialforegoing:infinity_drill>, [[null, <techreborn:advanceddrill>, <ore:craftingTungstenGrinder>], [<ore:plateTungstensteel>, <industrialforegoing:laser_drill>, <thermalinnovation:drill:4>], [<ore:plateTungstensteel>, <ore:ingotCrystallinePinkSlime>, null]]);
 
