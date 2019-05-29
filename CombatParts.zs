@@ -184,7 +184,7 @@
 		val Nano_Leggings = <ic2:nano_leggings>;
 		val Nano_Booots = <ic2:nano_boots>;
 		val Carbon_Plate = <ore:plateCarbon>;
-		val Nightvision_Goggles = <ic2:nightvision_goggles:26>
+		val Nightvision_Goggles = <ic2:nightvision_goggles:26>;
 		val Energy_Cube_T1 = <mekanism:energycube>.withTag({tier: 0});
 	
 	
